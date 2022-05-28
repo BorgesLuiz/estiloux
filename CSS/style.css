@@ -1,0 +1,200 @@
+/* seletor(éo alvo que o css vai atingir no html) {
+    Formatação - Propriedadesque a tag vai exibir no html- qual roupa ela vai usar 
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Gamja+Flower&family=Lato:wght@100;300;400&display=swap');
+
+/* Sempre que fizer um arquivo CSS, colocar esse RESET para controlar melhor as margens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    height: 100%;
+} */
+
+header {
+    background-color: #727272;
+    height: 70px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between; /*alinhamento em linha dos containers*/
+    align-items: center;/*alinhamento em coluna*/
+}
+
+.container-grid{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+}   
+
+span {
+    font-family: 'Gamja Flower', cursive;
+    font-style: italic;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+nav a:hover {
+    background-color: rgb(172, 172, 172);
+    border-radius: 5px;
+}
+
+
+body {
+    background-color: #efefef;
+    color: #9A9A9A;
+    /* height: 100%; */
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2% !important;
+    /* height: calc(100% - 70px); */
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 70%;
+}
+
+section h2{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.lapis{
+    width: 100%;
+}
+
+aside{
+    width: 25%;
+}
+
+.paraf {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+aside article{ 
+    margin-bottom: 30px;   
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+aside article h3 {
+    border-bottom: 1px solid #efefef;
+    text-transform: uppercase;
+    text-align: center; 
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+aside article ul li {
+    margin-left: 30px;
+    margin-right: 20px;
+
+}
+
+aside article h3,
+aside article p,
+aside article ul {
+
+    font-size: 16px; 
+    font-weight: 300;
+}
+
+aside article p{
+    text-align: center;  
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+aside article form {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside article form input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #e0dede;
+}
+aside article form button {
+    width: 18%;
+    height: 40px;
+    border: 1px solid #e0dede;
+    background-color: #727272;
+    font-size: 18px;
+}
+
+i {
+    color: white;
+}
+
+aside article input {
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+aside article .email{
+    margin: 0 auto;
+    }
+
+footer{
+    background-color: #727272;
+    margin-top: 1% !important;
+    /* height: 70px; */
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px; 
+    font-weight: 300;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}   
